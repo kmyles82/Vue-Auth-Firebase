@@ -12,6 +12,9 @@
   export default {
     components:{
       compHeader
+    },
+    created(){
+      this.$store.dispatch('refreshToken')
     }
   }
 </script>
